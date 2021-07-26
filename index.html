@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vedanta HomePage</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="pimg1">
+    <div class="ptext">
+      <span style="font-family: sans-serif; font-size: 50px; color: #ffffff;">
+        Vedanta Exports
+      </span>
+      <br>
+      <br>
+      <span style="font-family: sans-serif; font-size: 30px; color: #ffffff;">
+        Where Material meets Art
+      </span>  
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>Who are we?</h2>
+    <p>
+      <strong>Description:</strong> We are the industrialists producing and selling handicrafts worldwide with a veiw to get the best value for our product. Along with the objective to give our clients, the best value for money service.   
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        These are the Categories of what we present.
+
+      </span>
+      <br>
+      <p style="color: white;  font-size: 12px;">Click on any one of these two get more.</p>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+
+   <div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span><sub>T-Lights</sub></span>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span><sub>Decore<sub></span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span><sub>Table<br>Ware</sub></span>
+      </div>
+    </div>
+      <div class="slide slide4">
+      <div class="slide-content">
+        <span><sub>Vases</sub></span>
+      </div>
+    </div>
+    <div class="slide slide5">
+      <div class="slide-content">
+        <span><sub>Woodens</sub></span>
+      </div>
+    </div>
+    <div class="slide slide6">
+      <div class="slide-content">
+        <span><sub>Kitchen<br>Ware</sub></span>
+      </div>
+    </div>
+
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<h3><strong><u>#note:</u></strong> If the image slider doesnt work on your smartphone<br>
+try reloading the web-page on a laptop. Its much recommended to open this website on a computer for a better view</h3>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+        Vision and Mission 
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    
+    <p>
+      We always wanted ourselves to be as simple as we could be, this was to maintain peace in our lives and harmony in our work, that's why we always believe in 'simple living and higher thinking.' . Our work may or may not be so attractive to anyone but, however it's of our own so we love it, we keep doing more of it, improvise it, and work on new ideas.
+                    <br>
+                    <br>
+                    <br>
+                And as the business part is concerned, it's not just a business for us. It's our way to make new relations, get more feedbacks and experiences, because we focus more on self improvement rather than money-making, and try to be the best with our clients.    
+
+    </p>
+  </section>
+
+  <div class="pimg4">
+    <div class="ptext">
+      <span class="border">
+        
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <p class="contact-email">
+                  <a href="candle/candle.html">T-Lights and Candle Holders</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="decore/decore.html">Decore</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href="table/table.html">Table-Ware</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   <a href="vase/vase.html">Vases</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   <a href="wooden/wooden.html">Woodens</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    
+                <a href="kitchen/kitchen.html">Kitchen-Ware</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </p>
+    <h2>Keep in Touch</h2><br>
+    <p>Feel free to contact us for any <br>Product, service or even a new design idea you get, because we love new ideas.</p>
+    <br>
+
+ <p class="contact-address">
+                <STRONG>Address:</STRONG> Sherwa-Hakimpur Bypass Road,Fatehpur<br>
+                 Moradabad-244001, India.
+                </p>
+    <p class="contact-email"><strong>E mail 1:</strong>
+                    <a href="mailto:#0">info@vedantaexports.com</a>
+                </p>
+                 <p class="contact-email"><strong>E mail 2:</strong>
+                    <a href="mailto:#0">sales@vedantaexports.com</a>
+                </p>
+               
+                <p class="contact-numbers">
+                <strong>Call or Whatsapp:</strong> +91-9058192036
+                </p>
+  </section>  
+
+  <script type="text/javascript">
+    let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+  </script>
+</body>
+</html>

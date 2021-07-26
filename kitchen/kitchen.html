@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vedanta Kitchen Ware</title>
+  <link rel="stylesheet" href="kitchen.css">
+  
+</head>
+<body>
+  <div class="pimg1">
+    <div class="ptext">
+      <span style="font-family: sans-serif; font-size: 50px; color: #ffffff;">
+    Kitchen Ware
+      </span>
+      <br>
+      <br>
+      <span style="font-family: sans-serif; font-size: 30px; color: #ffffff;">
+        Blend fashion to your crocery
+      </span>  
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <p>Trust Vedanta when it's time for new pots and pans, cutlery or bakeware. Our stylish, durable kitchenware will make a great addition to your pantry and process.</p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        A Glipmse of some of our numerous kitchen items.
+
+      </span>
+      <br>
+      
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <section class="sub">
+     
+        <img src="1.jpg" class="le">
+      
+ 
+        <img src="2.jpg" class="ce">
+    
+   
+        <img src="3.jpg" class="ri">
+      
+    </section>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+       Watch more
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <section class="sub">
+     
+        <img src="4.jpg" class="le">
+      
+ 
+        <img src="5.jpg" class="ce">
+    
+   
+        <img src="6.jpg" class="ri">
+      
+    </section>
+   
+  </section>
+
+  <div class="pimg4">
+    <div class="ptext">
+      <span class="border">
+        
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <p>These are just 5% of the total products we build, not shown here because of security issues<br>Once you get in touch with us you will get a digi catalogue with a huge variety of all of these.<br><strong>Thank You</strong></p>
+    <br>
+<article>
+  <p class="contact-email">
+                  <a href="../index.html">HomePage</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="../decore/decore.html">Decore</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href="../table/table.html">Table-Ware</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   <a href="../vase/vase.html">Vases</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   <a href="../wooden/wooden.html">Woodens</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    
+                <a href="../candle/candle.html">T-Lights and Candle Holders</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </p>
+</article>
+  </section>  
+
+  <script type="text/javascript">
+    let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+  </script>
+</body>
+</html>
